@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="fwomni" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="Cont1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Cont1">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Cont1_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Cont2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Cont2">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Cont2_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Cont3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Cont3">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Cont3_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Cont4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Cont4">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Cont4_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

@@ -1,0 +1,8 @@
+prefix=/home/avdhoot/fwomni_ws/devel
+
+Name: fwomni
+Description: Description of fwomni
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
