@@ -5,6 +5,7 @@
   <arg name="rvizconfig" default="$(find fwomni)/config/urdf.rviz"/>
   
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find fwomni)/worlds/lagori_arena.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
@@ -17,6 +18,7 @@
   <!-- <node pkg="fwomni" name="odom_broadcaster" type="odom_pub.py" output="screen" /> -->
 
   <include file="$(find fwomni)/launch/controller.launch"/>
+  <include file="$(find fwomni)/launch/display.launch"/>
 
   <!-- <node pkg="fwomni" name="controller" type="control.py" output="screen" /> -->
   <!-- <node name="rviz" pkg="rviz" args="-d $(arg rvizconfig)" type="rviz" required="true"/> -->
