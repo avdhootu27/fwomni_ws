@@ -1,12 +1,20 @@
 <?xml version="1.0" ?>
 <launch>
-  <param name="robot_description" command="$(find xacro)/xacro $(find fwomni)/urdf/fwomni.xacro"/>
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model fwomni"/>
+  <arg name="model" default="$(find fwomni)/urdf/fwomni.xacro"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+  
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="paused" value="true"/>
+    <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
   </include>
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model fwomni" output="screen"/>
+
+  <node pkg="fwomni" name="odom_broadcaster" type="odom_pub.py" output="screen" />
+
+  <include file="$(find fwomni)/launch/controller.launch"/>
+
 </launch>

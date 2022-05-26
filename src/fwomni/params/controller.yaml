@@ -4,4 +4,39 @@
     type: joint_state_controller/JointStateController
     publish_rate: 50
 
-  # Position Controllers --------------------------------------
+  # Velocity Controllers --------------------------------------
+  Cont1_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: Cont1
+    pid: {p: 0.1, i: 0, d: 0}
+  Cont2_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: Cont2
+    pid: {p: 0.1, i: 0, d: 0}
+  Cont3_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: Cont3
+    pid: {p: 0.1, i: 0, d: 0}
+  Cont4_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: Cont4
+    pid: {p: 0.1, i: 0, d: 0}
+
+  gazebo_ros_control:
+    pid_gains:
+        Cont1:
+          p: 0
+          i: 0
+          d: 0
+        Cont2:
+          p: 0
+          i: 0
+          d: 0
+        Cont3:
+          p: 0
+          i: 0
+          d: 0
+        Cont4:
+          p: 0
+          i: 0
+          d: 0
