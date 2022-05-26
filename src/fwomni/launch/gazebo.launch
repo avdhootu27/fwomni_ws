@@ -2,6 +2,7 @@
 <launch>
   <arg name="model" default="$(find fwomni)/urdf/fwomni.xacro"/>
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+  <arg name="rvizconfig" default="$(find fwomni)/config/urdf.rviz"/>
   
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="paused" value="false"/>
@@ -13,8 +14,11 @@
 
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model fwomni" output="screen"/>
 
-  <node pkg="fwomni" name="odom_broadcaster" type="odom_pub.py" output="screen" />
+  <!-- <node pkg="fwomni" name="odom_broadcaster" type="odom_pub.py" output="screen" /> -->
 
   <include file="$(find fwomni)/launch/controller.launch"/>
+
+  <!-- <node pkg="fwomni" name="controller" type="control.py" output="screen" /> -->
+  <!-- <node name="rviz" pkg="rviz" args="-d $(arg rvizconfig)" type="rviz" required="true"/> -->
 
 </launch>
