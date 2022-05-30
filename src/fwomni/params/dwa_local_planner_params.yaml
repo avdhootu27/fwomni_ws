@@ -1,6 +1,6 @@
 DWAPlannerROS:
 
-  holonomic_robot: false
+  holonomic_robot: true
 
 # Robot Configuration Parameters
   max_vel_x: 0.80

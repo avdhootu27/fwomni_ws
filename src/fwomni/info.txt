@@ -1,0 +1,6 @@
+/move_base_simple/goal 		-> coordinates of goal gets published by rviz
+/move_base/status			-> status of goal is published. 1- goal is accepted by action server, 2- goal reached
+/move_base/result			-> publishes message when a goal is reached
+/move_base/goal				-> information of current goal is published
+/move_base/feedback			-> current status of bot is published (when it is following a path)
+/move_base/current_goal		-> position & orientation of goal is published
