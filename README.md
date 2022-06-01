@@ -29,3 +29,7 @@ $ roslaunch fwomni navigation.launch
 ```
 $ roslaunch fwomni automate.launch
 ```
+Run following command on another terminal to start the path
+```
+$ rostopic pub /automate/command std_msgs/String "start"
+```

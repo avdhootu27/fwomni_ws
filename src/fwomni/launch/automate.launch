@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <launch>
 
-  <include file="$(find my2wbnew_description)/launch/navigation.launch"/>
+  <include file="$(find fwomni)/launch/navigation.launch"/>
   <node pkg="fwomni" name="automate" type="automate_path.py" output="screen" />
 
 </launch>
