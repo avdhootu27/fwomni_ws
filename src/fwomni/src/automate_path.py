@@ -27,9 +27,10 @@ def onCommand(msg):
 
 def onGoalReached(msg):
 	if msg.status.text=="Goal reached.":
+		# mark goal as reached if timestamp of reached goal is equal to timestamp of current goal
 		if msg.status.goal_id.stamp==currentGoalHeader.stamp:
 			currentGoalReached = true
-			rospy.loginfo("Path in progress, reached goal "+str(currentGoalHeader.seq))
+			rospy.loginfo("Path in progress, goal "+str(currentGoalHeader.seq)+ "reached")
 
 def sendGoal(seq_):
 	poseStamp_ = PoseStamped()
@@ -52,10 +53,17 @@ def sendGoal(seq_):
 	rospy.loginfo("Path in progress, reaching goal " + str(seq_))
 
 def startPath():
+	# wait till start command is not received
+	while(!keepGoing):
+		pass
+
 	l = len(path)
 	for i in range(l):
+		# send one goal
 		sendGoal(i)
+		# wait till current goal is not reached
 		while(!currentGoalReached):
+			# stop the path if stop command is received
 			if keepGoing==false:
 				return
 			pass
@@ -63,12 +71,13 @@ def startPath():
 
 
 if __name__ == '__main__':
+	# initialize the node
 	rospy.init_node('automate')
+
 	to_move_base = rospy.Publisher('/move_base_simple/goal', PoseStamped, queue_size=1)
 	rospy.Subscriber("/move_base/result", MoveBaseActionResult, onGoalReached)
 	rospy.Subscriber("/automate/command", String, onCommand)
-
+	# start the path
 	startPath()
-
 	rospy.loginfo("Path automation stopped")
 	rospy.spin()
