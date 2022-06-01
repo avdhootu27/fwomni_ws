@@ -4,3 +4,41 @@
 /move_base/goal				-> information of current goal is published
 /move_base/feedback			-> current status of bot is published (when it is following a path)
 /move_base/current_goal		-> position & orientation of goal is published
+
+
+/move_base_simple/goal:
+	type   -    geometry_msgs/PoseStamped
+    format -    header: 
+				  seq: 0
+				  stamp: 
+				    secs: 53
+				    nsecs: 442000000
+				  frame_id: "map"
+				pose: 
+				  position: 
+				    x: 1.5519452095031738
+				    y: 3.0454635620117188
+				    z: 0.0
+				  orientation: 
+				    x: 0.0
+				    y: 0.0
+				    z: 0.06441113360944575
+				    w: 0.9979234468971786
+
+/move_base/result:
+	type   -    move_base_msgs/MoveBaseActionResult
+	format -    header: 
+				  seq: 0
+				  stamp: 
+				    secs: 62
+				    nsecs: 776000000
+				  frame_id: ''
+				status: 
+				  goal_id: 
+				    stamp: 
+				      secs: 53
+				      nsecs: 442000000
+				    id: "/move_base-1-53.442000000"
+				  status: 3
+				  text: "Goal reached."
+				result: 
