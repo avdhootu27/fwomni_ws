@@ -26,7 +26,6 @@ $ roslaunch fwomni navigation.launch
 ```
 
 ### To start autonomous path following:
-This code is not tested yet
 ```
 $ roslaunch fwomni automate.launch
 ```
