@@ -15,6 +15,7 @@
     <rosparam file="$(find fwomni)/params/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find fwomni)/params/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find fwomni)/params/move_base_params.yaml" command="load" />
+    <rosparam file="$(find fwomni)/params/global_planner_params.yaml" command="load" />
     <rosparam file="$(find fwomni)/params/dwa_local_planner_params.yaml" command="load" />
     <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
     <remap from="odom" to="$(arg odom_topic)"/>
