@@ -21,6 +21,7 @@ $ roslaunch fwomni amcl.launch
 ```
 
 ### To start autonomous navigation:
+There are two files of dwa local planner, one for holonomic & another for non-holonomic motion. Update the name of dwa local planner file in the move_base.launch to make the navigation holonomic/non-holonomic.
 ```
 $ roslaunch fwomni navigation.launch
 ```
