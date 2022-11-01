@@ -1,9 +1,9 @@
 GlobalPlanner:
   allow_unknown: false
   default_tolerance: 0.0
-  use_dijkstra: true   # false works better
-  use_quadratic: true  # no difference found for true & false
-  use_grid_path: false   # no difference found for true & false
+  use_dijkstra: false   # false works better
+  use_quadratic: false  # no difference found for true & false
+  use_grid_path: true   # no difference found for true & false
   old_navfn_behavior: false
   orientation_mode: 1
   outline_map: true
