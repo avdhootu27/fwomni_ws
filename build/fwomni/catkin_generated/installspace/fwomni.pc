@@ -1,4 +1,4 @@
-prefix=/home/avdhoot/fwomni_ws/install
+prefix=/home/dell/Desktop/noetic/fwomni_ws/install
 
 Name: fwomni
 Description: Description of fwomni

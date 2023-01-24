@@ -10,7 +10,7 @@
   <arg name="initial_pose_y"    default="0.0"/>
   <arg name="initial_pose_a"    default="0.0"/>
 
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find fwomni)/maps/lagori_arena.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find fwomni)/maps/custom1.yaml"/>
   <node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster" args="0 0 0 0 0 0 map odom 100" />
 
   <!-- AMCL -->

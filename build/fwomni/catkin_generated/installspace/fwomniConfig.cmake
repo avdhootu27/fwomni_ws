@@ -67,14 +67,14 @@ set(fwomni_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(fwomni_SOURCE_PREFIX /home/avdhoot/fwomni_ws/src/fwomni)
-  set(fwomni_DEVEL_PREFIX /home/avdhoot/fwomni_ws/devel)
+  set(fwomni_SOURCE_PREFIX /home/dell/Desktop/noetic/fwomni_ws/src/fwomni)
+  set(fwomni_DEVEL_PREFIX /home/dell/Desktop/noetic/fwomni_ws/devel)
   set(fwomni_INSTALL_PREFIX "")
   set(fwomni_PREFIX ${fwomni_DEVEL_PREFIX})
 else()
   set(fwomni_SOURCE_PREFIX "")
   set(fwomni_DEVEL_PREFIX "")
-  set(fwomni_INSTALL_PREFIX /home/avdhoot/fwomni_ws/install)
+  set(fwomni_INSTALL_PREFIX /home/dell/Desktop/noetic/fwomni_ws/install)
   set(fwomni_PREFIX ${fwomni_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/avdhoot/fwomni_ws/install/lib;/home/avdhoot/fwomni_ws/devel/lib;/home/avdhoot/swerve_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/dell/Desktop/noetic/fwomni_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/avdhoot/fwomni_ws/build'
+export CMAKE_PREFIX_PATH="/home/dell/Desktop/noetic/fwomni_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/dell/Desktop/noetic/fwomni_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/dell/Desktop/noetic/fwomni_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/dell/Desktop/noetic/fwomni_ws/src:$ROS_PACKAGE_PATH"

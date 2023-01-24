@@ -1,8 +1,8 @@
-# Install script for directory: /home/avdhoot/fwomni_ws/src/fwomni
+# Install script for directory: /home/dell/Desktop/noetic/fwomni_ws/src/fwomni
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/avdhoot/fwomni_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dell/Desktop/noetic/fwomni_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/avdhoot/fwomni_ws/build/fwomni/catkin_generated/installspace/fwomni.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dell/Desktop/noetic/fwomni_ws/build/fwomni/catkin_generated/installspace/fwomni.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fwomni/cmake" TYPE FILE FILES
-    "/home/avdhoot/fwomni_ws/build/fwomni/catkin_generated/installspace/fwomniConfig.cmake"
-    "/home/avdhoot/fwomni_ws/build/fwomni/catkin_generated/installspace/fwomniConfig-version.cmake"
+    "/home/dell/Desktop/noetic/fwomni_ws/build/fwomni/catkin_generated/installspace/fwomniConfig.cmake"
+    "/home/dell/Desktop/noetic/fwomni_ws/build/fwomni/catkin_generated/installspace/fwomniConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fwomni" TYPE FILE FILES "/home/avdhoot/fwomni_ws/src/fwomni/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fwomni" TYPE FILE FILES "/home/dell/Desktop/noetic/fwomni_ws/src/fwomni/package.xml")
 endif()
 

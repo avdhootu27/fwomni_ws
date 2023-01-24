@@ -6,7 +6,7 @@
 
   <!-- Arguments -->
   <arg name="model" default="omni-corrected"/>
-  <arg name="map_file" default="$(find fwomni)/maps/lagori_arena.yaml"/>
+  <arg name="map_file" default="$(find fwomni)/maps/custom1.yaml"/>
   <arg name="open_rviz" default="false"/>
   <arg name="move_forward_only" default="false"/>
 

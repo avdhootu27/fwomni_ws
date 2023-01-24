@@ -1,2 +1,2 @@
 fwomni
--DCATKIN_DEVEL_PREFIX=/home/avdhoot/fwomni_ws/devel -DCMAKE_INSTALL_PREFIX=/home/avdhoot/fwomni_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/dell/Desktop/noetic/fwomni_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dell/Desktop/noetic/fwomni_ws/install -G Unix Makefiles
