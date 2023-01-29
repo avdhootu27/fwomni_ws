@@ -10,15 +10,15 @@
     joint: Cont1
     pid: {p: 100.0, i: 0.01, d: 0.0}
   Cont2_velocity_controller:
-    type: effort_controllers/JointVelocityController
+    type: velocity_controllers/JointVelocityController
     joint: Cont2
     pid: {p: 100.0, i: 0.01, d: 0.0}
   Cont3_velocity_controller:
-    type: effort_controllers/JointVelocityController
+    type: velocity_controllers/JointVelocityController
     joint: Cont3
     pid: {p: 100.0, i: 0.01, d: 0.0}
   Cont4_velocity_controller:
-    type: effort_controllers/JointVelocityController
+    type: velocity_controllers/JointVelocityController
     joint: Cont4
     pid: {p: 100.0, i: 0.01, d: 0.0}
 

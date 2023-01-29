@@ -6,6 +6,7 @@
 <gazebo>
   <plugin name="control" filename="libgazebo_ros_control.so">
     <robotNamespace>/</robotNamespace>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
   </plugin>
 </gazebo>
 
@@ -56,7 +57,7 @@
   <gravity>true</gravity>
 </gazebo>
 
-<!-- <gazebo>
+<gazebo>
   <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
     <frameName>world</frameName>
     <bodyName>base_footprint</bodyName>
@@ -64,9 +65,9 @@
     <updateRate>50.0</updateRate>
     <publishTF>true</publishTF>
   </plugin>
-</gazebo> -->
+</gazebo>
 
-<gazebo>
+<!-- <gazebo>
   <plugin filename="libgazebo_ros_planar_move.so" name="mecanum_drive">
     <commandTopic>cmd_vel</commandTopic>
     <odometryTopic>odom</odometryTopic>
@@ -75,7 +76,7 @@
     <robotBaseFrame>base_footprint</robotBaseFrame>
     <publishTF>True</publishTF>
   </plugin>
-</gazebo>
+</gazebo> -->
 
 <gazebo reference="rplidar">
   <sensor type="ray" name="head_hokuyo_sensor">
