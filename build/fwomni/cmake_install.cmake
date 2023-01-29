@@ -52,3 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fwomni" TYPE FILE FILES "/home/dell/Desktop/noetic/fwomni_ws/src/fwomni/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fwomni" TYPE PROGRAM FILES "/home/dell/Desktop/noetic/fwomni_ws/build/fwomni/catkin_generated/installspace/control.py")
+endif()
+

@@ -11,6 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  geometry_msgs
+  nav_msgs
+  tf
 )
 
 ## System dependencies are found with CMake's conventions
@@ -204,3 +207,10 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+catkin_install_python(PROGRAMS src/control.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+add_executable(omni_control src/custom_control.cpp)
+target_link_libraries(omni_control ${catkin_LIBRARIES})

@@ -15,12 +15,4 @@
 
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model fwomni" output="screen"/>
 
-  <!-- <node pkg="fwomni" name="odom_broadcaster" type="odom_pub.py" output="screen" /> -->
-
-  <include file="$(find fwomni)/launch/controller.launch"/>
-  <include file="$(find fwomni)/launch/display.launch"/>
-
-  <!-- <node pkg="fwomni" name="controller" type="control.py" output="screen" /> -->
-  <!-- <node name="rviz" pkg="rviz" args="-d $(arg rvizconfig)" type="rviz" required="true"/> -->
-
 </launch>

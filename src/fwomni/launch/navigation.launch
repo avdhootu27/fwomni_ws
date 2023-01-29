@@ -2,7 +2,10 @@
 <launch>
 
   <!-- Gazebo & RViz -->
-  <include file="$(find fwomni)/launch/gazebo.launch"/>
+  <include file="$(find fwomni)/launch/display.launch"/>
+
+  <!-- Gazebo, RViz & custom controller -->
+  <!-- <include file="$(find fwomni)/launch/controller.launch"/> -->
 
   <!-- Arguments -->
   <arg name="model" default="omni-corrected"/>

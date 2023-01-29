@@ -8,35 +8,35 @@
   Cont1_velocity_controller:
     type: velocity_controllers/JointVelocityController
     joint: Cont1
-    pid: {p: 100.0, i: 0.01, d: 0.0}
+    pid: {p: 0.5, i: 0.0, d: 0.2}
   Cont2_velocity_controller:
     type: velocity_controllers/JointVelocityController
     joint: Cont2
-    pid: {p: 100.0, i: 0.01, d: 0.0}
+    pid: {p: 0.5, i: 0.0, d: 0.2}
   Cont3_velocity_controller:
     type: velocity_controllers/JointVelocityController
     joint: Cont3
-    pid: {p: 100.0, i: 0.01, d: 0.0}
+    pid: {p: 0.5, i: 0.0, d: 0.2}
   Cont4_velocity_controller:
     type: velocity_controllers/JointVelocityController
     joint: Cont4
-    pid: {p: 100.0, i: 0.01, d: 0.0}
+    pid: {p: 0.5, i: 0.0, d: 0.2}
 
   gazebo_ros_control:
     pid_gains:
         Cont1:
-          p: 100.0
-          i: 0.01
-          d: 0.0
+          p: 0.7
+          i: 0.0
+          d: 0.2
         Cont2:
-          p: 100.0
-          i: 0.01
-          d: 0.0
+          p: 0.7
+          i: 0.0
+          d: 0.2
         Cont3:
-          p: 100.0
-          i: 0.01
-          d: 0.0
+          p: 0.7
+          i: 0.0
+          d: 0.2
         Cont4:
-          p: 100.0
-          i: 0.01
-          d: 0.0
+          p: 0.7
+          i: 0.0
+          d: 0.2
