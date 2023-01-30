@@ -49,9 +49,9 @@ void onOdom(const nav_msgs::Odometry::ConstPtr& msg){
 
 void onTwist(const geometry_msgs::Twist::ConstPtr& msg){
 // velocities are divided by 6 because original velocities are too high for this small robot
-  x = msg->linear.x/6;
-  y = msg->linear.y/6;
-  z = msg->angular.z/6;
+  x = msg->linear.x;
+  y = msg->linear.y;
+  z = msg->angular.z;
 
 }
 
@@ -74,10 +74,10 @@ int main(int argc, char **argv) {
   
   while (ros::ok()){
 
-    omegaFR.data = (sin(7 * PI / 4) * x + cos(7 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u1 as front-right
-    omegaFL.data = (sin(1 * PI / 4) * x + cos(1 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u2 as front-left
-    omegaRL.data = (sin(3 * PI / 4) * x + cos(3 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u3 as rear-left 
-    omegaRR.data = (sin(5 * PI / 4) * x + cos(5 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u4 as rear-right
+    omegaFR.data = (sin(3 * PI / 4) * x + cos(3 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u1 as front-right
+    omegaFL.data = (sin(5 * PI / 4) * x + cos(5 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u2 as front-left
+    omegaRL.data = (sin(7 * PI / 4) * x + cos(7 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u3 as rear-left 
+    omegaRR.data = (sin(1 * PI / 4) * x + cos(1 * PI / 4) * y + BOT_RADIUS * z - correction) / WHEEL_RADIUS;    //assuming u4 as rear-right
 
     front_right.publish(omegaFR);
     front_left.publish(omegaFL);

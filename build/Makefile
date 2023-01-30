@@ -714,6 +714,19 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named odom_broadcaster
+
+# Build rule for target.
+odom_broadcaster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 odom_broadcaster
+.PHONY : odom_broadcaster
+
+# fast build rule for target.
+odom_broadcaster/fast:
+	$(MAKE) -f fwomni/CMakeFiles/odom_broadcaster.dir/build.make fwomni/CMakeFiles/odom_broadcaster.dir/build
+.PHONY : odom_broadcaster/fast
+
+#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -1002,6 +1015,7 @@ help:
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... odom_broadcaster"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_eus"

@@ -214,3 +214,6 @@ catkin_install_python(PROGRAMS src/control.py
 
 add_executable(omni_control src/custom_control.cpp)
 target_link_libraries(omni_control ${catkin_LIBRARIES})
+
+add_executable(odom_broadcaster src/odom_broadcaster.cpp)
+target_link_libraries(odom_broadcaster ${catkin_LIBRARIES})
