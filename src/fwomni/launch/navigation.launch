@@ -4,9 +4,6 @@
   <!-- Gazebo & RViz -->
   <include file="$(find fwomni)/launch/display.launch"/>
 
-  <!-- Gazebo, RViz & custom controller -->
-  <!-- <include file="$(find fwomni)/launch/controller.launch"/> -->
-
   <!-- Arguments -->
   <arg name="model" default="omni-corrected"/>
   <arg name="map_file" default="$(find fwomni)/maps/custom1.yaml"/>

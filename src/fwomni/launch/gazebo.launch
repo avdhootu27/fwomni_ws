@@ -2,10 +2,10 @@
 <launch>
   <arg name="model" default="$(find fwomni)/urdf/fwomni.xacro"/>
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
-  <arg name="rvizconfig" default="$(find fwomni)/config/urdf.rviz"/>
+  <arg name="rvizconfig" default="$(find fwomni)/config/navigation.rviz"/>
   
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <!-- <arg name="world_name" value="$(find fwomni)/worlds/custom1.world"/> -->
+    <arg name="world_name" value="$(find fwomni)/worlds/custom1.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
