@@ -24,12 +24,12 @@ DWAPlannerROS:
   latch_xy_goal_tolerance: false
 
 # Forward Simulation Parameters
-  sim_time: 2.0
-  vx_samples: 10
-  vy_samples: 10
+  sim_time: 1.5
+  vx_samples: 5
+  vy_samples: 5
   vth_samples: 10    #7 seems less efficient than 10
   sim_granularity : 0.05
-  controller_frequency: 5.0
+  controller_frequency: 4.0
 
 # Trajectory Scoring Parameters
   path_distance_bias: 32.0
