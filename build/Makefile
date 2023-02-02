@@ -285,19 +285,6 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named omni_control
-
-# Build rule for target.
-omni_control: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 omni_control
-.PHONY : omni_control
-
-# fast build rule for target.
-omni_control/fast:
-	$(MAKE) -f fwomni/CMakeFiles/omni_control.dir/build.make fwomni/CMakeFiles/omni_control.dir/build
-.PHONY : omni_control/fast
-
-#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -969,7 +956,6 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... omni_control"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_nodejs"

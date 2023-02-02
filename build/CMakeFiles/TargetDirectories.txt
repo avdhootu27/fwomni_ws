@@ -35,10 +35,9 @@
 /home/dell/Desktop/noetic/fwomni_ws/build/gtest/googletest/CMakeFiles/test.dir
 /home/dell/Desktop/noetic/fwomni_ws/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/dell/Desktop/noetic/fwomni_ws/build/gtest/googletest/CMakeFiles/gtest.dir
+/home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/install/strip.dir
 /home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/install.dir
 /home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/list_install_components.dir
-/home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/install/strip.dir
-/home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/omni_control.dir
 /home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir
 /home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
 /home/dell/Desktop/noetic/fwomni_ws/build/fwomni/CMakeFiles/actionlib_generate_messages_nodejs.dir

@@ -79,7 +79,7 @@ clean: fwomni/clean
 # Directory level rules for directory fwomni
 
 # Recursive "all" directory target.
-fwomni/all: fwomni/CMakeFiles/omni_control.dir/all
+fwomni/all:
 
 .PHONY : fwomni/all
 
@@ -89,7 +89,6 @@ fwomni/preinstall:
 .PHONY : fwomni/preinstall
 
 # Recursive "clean" directory target.
-fwomni/clean: fwomni/CMakeFiles/omni_control.dir/clean
 fwomni/clean: fwomni/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 fwomni/clean: fwomni/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 fwomni/clean: fwomni/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
@@ -339,8 +338,8 @@ CMakeFiles/download_extra_data.dir/clean:
 # Target rules for target gtest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmock.dir/all
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
+gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dell/Desktop/noetic/fwomni_ws/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
@@ -443,33 +442,6 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 gtest/googletest/CMakeFiles/gtest.dir/clean:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
-
-#=============================================================================
-# Target rules for target fwomni/CMakeFiles/omni_control.dir
-
-# All Build rule for target.
-fwomni/CMakeFiles/omni_control.dir/all:
-	$(MAKE) -f fwomni/CMakeFiles/omni_control.dir/build.make fwomni/CMakeFiles/omni_control.dir/depend
-	$(MAKE) -f fwomni/CMakeFiles/omni_control.dir/build.make fwomni/CMakeFiles/omni_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dell/Desktop/noetic/fwomni_ws/build/CMakeFiles --progress-num=9,10 "Built target omni_control"
-.PHONY : fwomni/CMakeFiles/omni_control.dir/all
-
-# Build rule for subdir invocation for target.
-fwomni/CMakeFiles/omni_control.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dell/Desktop/noetic/fwomni_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 fwomni/CMakeFiles/omni_control.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dell/Desktop/noetic/fwomni_ws/build/CMakeFiles 0
-.PHONY : fwomni/CMakeFiles/omni_control.dir/rule
-
-# Convenience name for target.
-omni_control: fwomni/CMakeFiles/omni_control.dir/rule
-
-.PHONY : omni_control
-
-# clean rule for target.
-fwomni/CMakeFiles/omni_control.dir/clean:
-	$(MAKE) -f fwomni/CMakeFiles/omni_control.dir/build.make fwomni/CMakeFiles/omni_control.dir/clean
-.PHONY : fwomni/CMakeFiles/omni_control.dir/clean
 
 #=============================================================================
 # Target rules for target fwomni/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir
